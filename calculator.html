@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính cá nhân</title>
+    <style>
+        table{
+			margin-left: 400px;
+        }
+        .button{
+            width: 80px;
+            height: 50px;
+            background-color: forestgreen;
+            text-align: center;
+        }
+		.result{
+			margin-left: 400px;
+            margin-top: 100px;
+  			width: 333px;
+  			height: 70px;
+			border: 10px solid grey;
+  			line-height: 40px;
+		}
+		h1{
+			float: right;
+		}
+    </style>
+</head>
+<body>
+    <table border="3px">
+        <tr>
+            <div class="result"><h1 id = "demo"></h1></div>
+        </tr>
+		<tr>
+				<td><input type="button" class="button" value="MC" onclick=''></td>
+	            <td><input type="button" class="button" value="M+" onclick='addM()'></td>
+	            <td><input type="button" class="button" value="M-" onclick='subM()'></td>
+	            <td><input type="button" class="button" value="MR" onclick='readM()'></td>
+		</tr>
+		<tr>
+				<td><input type="button" class="button" value="C" onclick='clearDisplay()'></td>
+				<td><input type="button" class="button" value='+/-' onclick='doidau()'></td>
+				<td><input type="button" class="button" value="/" onclick='chia()'></td>
+				<td><input type="button" class="button" value="x" onclick='nhan()'></td>
+		</tr>
+		<tr>
+				<td><input type="button" class="button" value="7" onclick='addKey("7")'></td>
+				<td><input type="button" class="button" value="8" onclick='addKey("8")'></td>
+				<td><input type="button" class="button" value="9" onclick='addKey("9")'></td>
+				<td><input type="button" class="button" value="-" onclick='tru()'></td>
+		</tr>
+		<tr>
+				<td><input type="button" class="button" value="4" onclick='addKey("4")'></td>
+				<td><input type="button" class="button" value="5" onclick='addKey("5")'></td>
+				<td><input type="button" class="button" value="6" onclick='addKey("6")'></td>
+				<td><input type="button" class="button" value="+" onclick='cong()'></td>
+		</tr>
+		<tr>
+				<td><input type="button" class="button" value="1" onclick='addKey("1")'></td>
+				<td><input type="button" class="button" value="2" onclick='addKey("2")'></td>
+				<td><input type="button" class="button" value="3" onclick='addKey("3")'></td>
+				<td rowspan="2"><input type="button" class="button" value="=" onclick='compute()'></td>
+		</tr>
+		<tr>
+				<td colspan="2"><input type="button" class="button" value="0" onclick='addKey("0")'></td>
+				<td><input type="button" class="button" value="." onclick='sothapphan()'></td>
+
+		</tr>
+    </table>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
